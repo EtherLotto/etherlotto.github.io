@@ -52,22 +52,25 @@
             <p>每期彩票100%开出奖项 奖金总额为当期销售额的80%</p>
             <p>若当期开出多个相同号码 则奖金平分</p>
           </a-collapse-panel>
-          <a-collapse-panel key="3" header="如何购买">
+          <a-collapse-panel key="3" header="是否有暗箱操作">
+            <p>以太乐透的智能合约开源并验证 所有源代码公开 任何人包括合约所有者都无法操控开奖号码 也不存在跑路 公平公正公开</p>
+          </a-collapse-panel>
+          <a-collapse-panel key="4" header="如何购买">
             <p>以太乐透支持多种金额的玩法 在当前页面选择金额后 点击下方 [购买] 按钮 输入自己想要的号码 即可购买</p>
           </a-collapse-panel>
-          <a-collapse-panel key="4" header="开奖算法">
+          <a-collapse-panel key="5" header="开奖算法">
             <p>为了公平公正 开奖的算法很简单 就是当期所有购买者 在开奖时的钱包余额数字拼接后 生成 [keccak] 值</p>
           </a-collapse-panel>
-          <a-collapse-panel key="5" header="如何查看是否开奖">
+          <a-collapse-panel key="6" header="如何查看是否开奖">
             <p>可以在任意的 NFT 市场中 直接刷新 [matedata] 进行查看是否开奖</p>
           </a-collapse-panel>
-          <a-collapse-panel key="6" header="如何查看自己是否中奖">
+          <a-collapse-panel key="7" header="如何查看自己是否中奖">
             <p>开奖后可以在任意的 NFT 市场中 直接刷新 [matedata] 进行查看是否中奖</p>
           </a-collapse-panel>
-          <a-collapse-panel key="7" header="如何兑奖">
+          <a-collapse-panel key="8" header="如何兑奖">
             <p>在当前页面的 [我的钱包] 中 点击 [彩票兑奖] 输入 [彩票编码] 即可兑奖</p>
           </a-collapse-panel>
-          <a-collapse-panel key="8" header="如何领取自己的奖励">
+          <a-collapse-panel key="9" header="如何领取自己的奖励">
             <p>在当前页面的 [我的钱包] 中 点击 [领取奖励] 即可领取</p>
           </a-collapse-panel>
         </a-collapse>
@@ -198,7 +201,7 @@ export default {
       this.provider = new ethers.providers.Web3Provider(window.ethereum, 1)
       this.contract = new ethers.Contract(this.address, EtherLotto.abi, this.provider.getSigner())
       try {
-        await this.getPeriodCode()
+        this.getPeriodCode()
       } catch (error) {}
       this.init = true
     } catch (error) {

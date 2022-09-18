@@ -102,7 +102,7 @@ export default {
       }
     },
     opensea () {
-      window.open(`https://opensea.io/${this.account.address}?search[query]=Ether Lotto`)
+      window.open(`https://opensea.io/${this.account}?search[query]=Ether Lotto`)
     },
     exchange () {
       this.$emit('exchange')
