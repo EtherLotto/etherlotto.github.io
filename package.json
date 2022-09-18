@@ -1,0 +1,35 @@
+{
+  "name": "etherlotto.github.io",
+  "version": "1.0.0",
+  "description": "EtherLotto Web",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "author": "EtherLotto",
+  "license": "MIT",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EtherLotto/etherlotto.github.io.git"
+  },
+  "keywords": [
+    "etherlotto"
+  ],
+  "bugs": {
+    "url": "https://github.com/EtherLotto/etherlotto.github.io/issues"
+  },
+  "homepage": "https://github.com/EtherLotto/etherlotto.github.io#readme",
+  "devDependencies": {
+    "ant-design-vue": "^1.7.8",
+    "ethers": "^5.7.0",
+    "nuxt": "^2.15.8",
+    "sass": "^1.54.8",
+    "sass-loader": "^10.3.1",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

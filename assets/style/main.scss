@@ -1,0 +1,55 @@
+body {
+  min-width: 50rem;
+  width: 100%!important;
+}
+
+.ant-spin-nested-loading > div > .ant-spin {
+  max-height: unset!important;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 6rem;
+  min-width: 50rem;
+  box-sizing: border-box;
+
+  .logo {
+    float: left;
+    margin: 1.425rem 3rem;
+  }
+
+  .links {
+    float: right;
+    padding: 2rem 3rem;
+  }
+
+  .select-wallet-mobile {
+    display: none;
+  }
+}
+
+.top {
+  padding: 2rem;
+  padding-top: 7rem;
+
+  .select-wallet {
+    margin-left: 20px;
+  }
+}
+
+.main {
+  padding: 0.8rem;
+
+  .ant-collapse-borderless {
+    background-color: #FFF;
+  }
+}
+
+.link-wallet {
+  .ant-drawer-content-wrapper {
+    width: 400px!important;
+  }
+}

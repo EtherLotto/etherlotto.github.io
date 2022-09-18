@@ -1,0 +1,39 @@
+@media screen and (max-width: 50rem) {
+  body {
+    min-width: 0!important;
+  }
+
+  .header {
+    width: 100%!important;
+    min-width: 0!important;
+
+    .links {
+      display: none;
+    }
+    
+    .select-wallet-mobile {
+      display: block;
+      float: right;
+      padding: 2rem 3rem;
+    }
+  }
+
+  .top {
+    padding: 0.8rem;
+    padding-top: 6rem;
+
+    .select-wallet {
+      display: none;
+    }
+  }
+  
+  .link-wallet {
+    .ant-drawer-content-wrapper {
+      width: 300px!important;
+    }
+
+    .tip {
+      font-size: 0.8rem!important;
+    }
+  }
+}
